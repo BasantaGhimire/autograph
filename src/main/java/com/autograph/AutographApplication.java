@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AutographApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(AutographApplication.class, args);
+		System.out.println("Autograph project is running");
 	}
 
 }
