@@ -20,36 +20,13 @@ public class UserService  {
         return userRepository.findAll();
     }
 
-    public Optional<User> getById(final String Id) {
+    public Optional<User> getById(String Id) {
         return userRepository.findById(Id);
     }
 
-    public User updateUser(User user) {
-        return userRepository.save(user);
-        /*return userRepository.findById(Id)
-                .flatMap(currentUser->{
-                    currentUser.setAddress(user.getAddress());
-                    currentUser.setAge(user.getAge());
-                    currentUser.setName(user.getName());
+    public User updateUser(User user) { return userRepository.save(user);}
 
-                    return userRepository.save(currentUser)
-                };)
-                .map(updateUser->(user));*/
-    }
+    public void deleteUser(String id) { userRepository.deleteById(id);}
 
-    public void deleteUser(String Id) {
-        userRepository.deleteById(Id);
-    }
-
-
-
-
-/*
-
-
-    public User deleteUser(int userId) {
-        return userRepository.deleteUser(userId);
-    }
-
- */
+    public List<User> getByAddress(String address) { return userRepository.findAllByAddress(address); }
 }
