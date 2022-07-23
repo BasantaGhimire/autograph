@@ -20,8 +20,8 @@ public class Album {
     private String coverPicUrl;
     private String createdBy;
 
-    private String dateCreated;
+    //private String dateCreated;
 
-    /*@CreatedDate
-    private Date dateCreated = new Date(System.currentTimeMillis());*/
+    @CreatedDate
+    private Date dateCreated = new Date(System.currentTimeMillis());
 }

@@ -20,9 +20,9 @@ public class Photo {
     private String photoUrl;
     private String createdBy;
 
-    private String dateCreated;
+    //private String dateCreated;
 
-    /*@CreatedDate
-    private Date dateCreated = new Date(System.currentTimeMillis());*/
+    @CreatedDate
+    private Date dateCreated = new Date(System.currentTimeMillis());
 
 }
