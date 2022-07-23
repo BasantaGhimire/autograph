@@ -19,7 +19,10 @@ public class Photo {
     private String albumId;
     private String photoUrl;
     private String createdBy;
-    @CreatedDate
-    private Date dateCreated = new Date(System.currentTimeMillis());
+
+    private String dateCreated;
+
+    /*@CreatedDate
+    private Date dateCreated = new Date(System.currentTimeMillis());*/
 
 }

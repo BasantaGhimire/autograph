@@ -19,6 +19,9 @@ public class Album {
     private String name;
     private String coverPicUrl;
     private String createdBy;
-    @CreatedDate
-    private Date dateCreated = new Date(System.currentTimeMillis());
+
+    private String dateCreated;
+
+    /*@CreatedDate
+    private Date dateCreated = new Date(System.currentTimeMillis());*/
 }

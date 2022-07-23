@@ -23,8 +23,9 @@ public class Comment {
     private String photoId;
     private String message;
     private String createdBy;
+    private String dateCreated;
 
-   @CreatedDate
-    private Date dateCreated = new Date(System.currentTimeMillis());
+   /*@CreatedDate
+    private Date dateCreated = new Date(System.currentTimeMillis());*/
 
 }
